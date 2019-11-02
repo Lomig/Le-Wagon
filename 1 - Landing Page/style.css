@@ -1,0 +1,83 @@
+body {
+	background: #f0decb;
+	color: #504658;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	color: #ce2e6c;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px
+}
+
+a {
+	text-decoration: none;
+	color: #ce2e6c;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #ffb5b5;
+}
+
+/* Custom design */
+
+#banner {
+	background-image: url("https://picsum.photos/1300/600");
+	background-size: cover;
+	padding: 150px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 5px black;
+}
+
+#banner h1 {
+	color: white;
+	font-size: 50px;
+}
+
+#banner p {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 30px;
+	font-weight: lighter;
+}
+
+#banner a {
+	text-shadow: none;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+	border-color: #ffb5b5 !important;
+    background-color: #ce2e6c !important;
+}
+
+.btn-primary:hover {
+	border-color: #ce2e6c !important;
+    background-color: #ffb5b5 !important;
+}
+
+.card {
+	padding: 50px;
+	text-align: center;
+}
+
+#footer {
+	background-color: rgb(30, 30, 30);
+	color: lightgrey;
+	padding: 15px 30px 15px 30px;
+	margin-bottom: 0;
+}
+
+#footer a {
+	font-size: 15px;
+	color: lightgrey;
+}
+
+#footer a:hover {
+	color: white;
+}
