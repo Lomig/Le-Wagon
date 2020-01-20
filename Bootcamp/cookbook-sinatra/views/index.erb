@@ -1,0 +1,10 @@
+<h1>My Cookbook</h1>
+<h2> My recipes:<h2>
+<% @recipes.each_with_index do |recipe, index| %>
+  <li>
+    <a href="delete/<%=index=%>">🗑  </a><a href="/recipe/<%=index=%>"><%= recipe.name =%></a>
+  </li>
+<% end %>
+<br>
+<a href="/new">Add a new recipe</a>
+<a href="/import">Import a new recipe</a>

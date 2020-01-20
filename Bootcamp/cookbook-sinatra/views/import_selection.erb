@@ -1,0 +1,8 @@
+<h1><a href='/'>My Cookbook</a></h1>
+  <h2>Selection of recipes from Marmiton about <%= @keyword =%></h2>
+  Click on the recipe you want to add:
+  <ol>
+  <% @results.each_with_index do |result, index| %>
+    <li> <a href="/import_selection/<%="#{index}/#{result}"=%>"><%= result =%></a> </li>
+  <% end %>
+  </ol>
