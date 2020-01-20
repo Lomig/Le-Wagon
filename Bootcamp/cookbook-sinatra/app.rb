@@ -55,10 +55,10 @@ post '/import' do
   erb :import
 end
 
-get '/import_selection/:index/:name' do
+get '/import/:index/:name' do
   description = search.parse_description(params[:index].to_i)
                       .gsub(/^\s+/, "")
-                      .gsub(/\t+/, "\n")
+                      .gsub(/\t+/, "<br>")
   prep_time = search.parse_prep_time
   difficulty = search.parse_difficulty
   cookbook.add_recipe(Recipe.new(params[:name],
