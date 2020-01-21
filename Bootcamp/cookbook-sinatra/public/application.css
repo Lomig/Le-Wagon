@@ -86,3 +86,11 @@ nav {
 .difficulty {
 	color: #D81E5B;
 }
+
+input {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+}
