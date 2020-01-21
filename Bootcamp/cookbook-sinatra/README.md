@@ -1,4 +1,4 @@
-# Cookbook Sinatra
+# Sinatra Cookbook
 
 Week 3 training in Le Wagon.
 
