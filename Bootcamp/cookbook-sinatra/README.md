@@ -1,14 +1,14 @@
-#Cookbook Sinatra
+# Cookbook Sinatra
 
 Week 3 training in Le Wagon.
 
 Cookbook is primarily a console application to learn the MVC pattern design.
 An optional exercise suggests to take it to Sinatra.
 
-Screenshot: ![Screenshot of the app](/public/images/screenshot.png "Cookbook Sinatra")
+Screenshot: ![Screenshot of the app](public/images/screenshot.png "Cookbook Sinatra")
 
 
-##Features
+## Features
 
 * Let you list your recipes
 * Let you add a recipe
