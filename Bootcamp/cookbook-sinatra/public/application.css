@@ -1,0 +1,88 @@
+.menu {
+	list-style-type: none;
+	align-items: center;
+	display: flex;
+	margin: 0;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.menu-item {
+	margin: 0;
+	font-size: 20px;
+}
+.menu-item a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 10px 25px;
+}
+
+.menu-item a:hover {
+	background-color: #F0544F;
+}
+
+.current-menu-item {
+  background-color: #D81E5B;
+  color: #331832;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	background-color: #331832;
+	padding-right: 30px;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 90px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card-product img {
+  height: 100%;
+  width: 90px;
+  object-fit: cover;
+}
+
+.card-product-infos a {
+	text-decoration: none;
+	color: black;
+}
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.destroy {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #331832;
+}
+
+.difficulty {
+	color: #D81E5B;
+}

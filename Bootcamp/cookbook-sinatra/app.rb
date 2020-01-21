@@ -17,6 +17,10 @@ end
 cookbook = Cookbook.new("./data/recipes.csv")
 search = nil
 
+def active_page?(path = '')
+  request.path_info == '/' + path
+end
+
 get '/' do
   @recipes = cookbook.all
   erb :index

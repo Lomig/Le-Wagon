@@ -8,10 +8,18 @@
     <title>Cookbook Sinatra</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="/application.css">
   </head>
   <body>
+    <nav>
+      <ul class="menu">
+        <li class="menu-item <%= 'current-menu-item' if active_page?("") %>"><a href="/">Home</a></li>
+        <li class="menu-item <%= 'current-menu-item' if active_page?("new") %>"><a href="/new">Add Recipe</a></li>
+        <li class="menu-item <%= 'current-menu-item' if active_page?("import") %>"><a href="/import">Import Recipe</a></li>
+      </ul>
+      <div class="title">Sinatra Cookbook</div>
+    </nav>
 
     <div class="container">
       <div class="row">

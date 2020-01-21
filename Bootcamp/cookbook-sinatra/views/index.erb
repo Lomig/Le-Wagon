@@ -1,10 +1,12 @@
-<h1>My Cookbook</h1>
-<h2> My recipes:<h2>
+<h1>Recipe List</h1>
 <% @recipes.each_with_index do |recipe, index| %>
-  <li>
-    <a href="delete/<%=index=%>">🗑  </a><a href="/recipe/<%=index=%>"><%= recipe.name =%></a>
-  </li>
+  <div class="card-product">
+    <img src="/images/chef.svg" />
+    <div class="card-product-infos">
+      <a href="/recipe/<%=index=%>"><h2><%= recipe.name =%></h2></a>
+      <p>Preparation Time: <%= recipe.prep_time =%> — Difficulty: <span class="difficulty"><%= Array.new(recipe.difficulty, "<i class=\"fas fa-star\"></i>").join =%></span></p>
+      <div class="destroy"><a href="delete/<%=index=%>"><i class="fas fa-trash"></i></a></div>
+    </div>
+  </div>
 <% end %>
-<br>
-<a href="/new">Add a new recipe</a>
-<a href="/import">Import a new recipe</a>
+
