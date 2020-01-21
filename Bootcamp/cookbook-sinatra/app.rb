@@ -39,7 +39,7 @@ post '/recipes' do
   cookbook.add_recipe(Recipe.new(params[:recipe_name],
                                  params[:recipe_description],
                                  params[:recipe_prep_time],
-                                 params[:recipe_difficulty]))
+                                 params[:recipe_difficulty].to_i))
   redirect("/")
 end
 
